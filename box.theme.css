@@ -1,0 +1,102 @@
+/**
+ * @name box.css
+ * @author LackingAName
+ * @description makes everything box & some personal changes
+*/
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/fonts/google-sans.css"); /* tyyyy */
+
+/* main */
+:root {
+    --theme-base-color: #000;
+    --theme-base-color-amount: 50%;
+    --radius-xs: 0px;
+    --radius-sm: 0px;
+    --radius-md: 0px;
+    --radius-lg: 0px;
+    --radius-xl: 0px;
+    --radius-xxl: 0px;
+    --radius-round: 0px;
+    --font-primary: "Google Sans";
+    --font-display: "Google Sans";
+}
+* {
+    border-radius: 0px !important;
+    rx: 0 !important;
+}
+
+/* home button */
+.listItem__650eb mask {
+    display: none;
+}
+
+/* friends list */
+.peopleListItem_cc6179 { /* allows left outline to be visible */
+    overflow: visible;
+}
+.userInfo__0a06e { /* allows top outline to be visible */
+    overflow: visible;
+    width: 80%;
+}
+
+/* avatars (dms, member lists) */
+.wrapper__44b0c * { /* allows top and left outline to be visible */
+    overflow: visible;
+    contain: none;
+}
+.wrapper__44b0c rect { /* hide status indicator */
+    fill: none;
+}
+.mask__68edb circle, .mask__44b0c circle { /* dm user profile > outline to box & remove status indicator outline */
+    display: none;
+}
+.wrapper__44b0c .svg__44b0c foreignObject { /* makes avatar a box and creates outline */
+    mask: none;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-offset: 1px;
+}
+.wrapper__44b0c[aria-label$="Online"] .svg__44b0c foreignObject, .wrapper__44b0c[aria-label$="Online via mobile"] .svg__44b0c foreignObject {
+    outline-color: rgb(67,162,90);
+}
+.wrapper__44b0c[aria-label$="Do Not Disturb"] .svg__44b0c foreignObject {
+    outline-color: rgb(216,58,66);
+}
+.wrapper__44b0c[aria-label$="Idle"] .svg__44b0c foreignObject {
+    outline-color: rgb(202,150,84);
+}
+
+/* rgb names in calls cuz y not */
+.experimentOverlayTitle__2f4f7 span {
+    color: transparent;
+    background: linear-gradient(to right, 
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #00ff00,
+        #00ff80,
+        #00ffff,
+        #0080ff,
+        #0000ff,
+        #8000ff,
+        #ff00ff,
+        #ff0080,
+        #ff0000,
+        #ff8000,
+        #ffff00,
+        #00ff00,
+        #00ff80,
+        #00ffff,
+        #0080ff,
+        #0000ff,
+        #8000ff,
+        #ff00ff,
+        #ff0080
+    );
+    background-clip: text;
+    animation: rgbtextmove 6s linear infinite;
+    background-size: 400% 100%;
+}
+@keyframes rgbtextmove {
+    0% {background-position: 0 0;}
+    100% {background-position: -70% 0;}
+}
