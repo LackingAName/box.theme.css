@@ -93,10 +93,10 @@
         #ff0080
     );
     background-clip: text;
-    animation: rgbtextmove 6s linear infinite;
+    animation: rgbtextmove 30s linear infinite;
     background-size: 400% 100%;
 }
 @keyframes rgbtextmove {
     0% {background-position: 0 0;}
-    100% {background-position: -70% 0;}
+    100% {background-position: 400% 0;}
 }
