@@ -64,6 +64,9 @@
 .wrapper__44b0c[aria-label$="Idle"] .svg__44b0c foreignObject {
     outline-color: rgb(202,150,84);
 }
+.callAvatarMask_f910d0 foreignObject {
+    mask: none;
+}
 
 /* rgb names in calls cuz y not */
 .experimentOverlayTitle__2f4f7 span {
