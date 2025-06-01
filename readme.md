@@ -1,6 +1,6 @@
 # box.theme.css
 
-so im likee, not a skilled css programmer soooo sorry if it look baadd
+so i'm likee, not a skilled css programmer soooo sorry if it look baadd
 
 here's what gets changed rn:
 
@@ -10,7 +10,7 @@ here's what gets changed rn:
 
 - this uses the google sans ~~font~~ typeface since it looks wayyy better and is more readable in my honest opinion
 
-- since everything is a box, i had to make status indicators a border and not a lil circle
+- since everything is a box, i had to make status indicators a border and not a lil' circle
 
 - display names in voice chats have cool rgb scrolling effect bc y not :)
 
